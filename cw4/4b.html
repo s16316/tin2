@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+
+</br>
+
+
+<div id="divID"></div>
+<input type="text" id="divtekst" value="">
+<button onclick='addText(document.getElementById("divtekst").value)'>Dodaj tekst</button></br>
+
+
+
+<script>
+
+
+
+
+
+
+function addText(tekst) {
+	var div = document.getElementById('divID');
+	div.innerHTML += tekst;
+}
+
+
+</script>
+
+</body>

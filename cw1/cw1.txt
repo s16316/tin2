@@ -1,0 +1,37 @@
+<article>
+		<header>
+		<p>Witam na stronie...</p>
+		<h1>Kurs języka HTML</h1>
+	</header>
+	<section>
+		<header>
+			<p>Witam na stronie...</p>
+			<h1>Kurs języka HTML</h1>
+		</header>
+
+	<h1>WWF</h1>
+	<p>The World Wide Fund for Nature (WWF) is....</p>
+</section>
+<section>
+<header>
+	<p>Witam na stronie...</p>
+	<h1>Kurs języka HTML</h1>
+</header>
+  <h1>WWF</h1>
+  <p>The World Wide Fund for Nature (WWF) is....</p>
+</section>
+  <h1>Google Chrome</h1>
+  <p>Google Chrome is a free, open-source web browser developed by Google, released in 2008.</p>
+</article>
+<article>
+<section>
+  <h1>WWF</h1>
+  <p>The World Wide Fund for Nature (WWF) is....</p>
+</section>
+<section>
+  <h1>WWF</h1>
+  <p>The World Wide Fund for Nature (WWF) is....</p>
+</section>
+  <h1>Google Chrome</h1>
+  <p>Google Chrome is a free, open-source web browser developed by Google, released in 2008.</p>
+</article>

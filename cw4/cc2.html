@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+
+</br>
+<input type="text" id="tekst" value="30">
+<input type="text" id="wynik" value="">
+
+<button onclick='cToF(document.getElementById("tekst").value)'>Try it</button></br>
+<div id="divID"></div>
+<input type="text" id="divtekst" value="">
+<button onclick='addText(document.getElementById("divtekst").value)'>Dodaj tekst</button></br>
+
+<input type="text" id="number" value="">
+<input type="text" id="notnull" value="">
+<button onclick='validate()'>Validate</button></br>
+<div id="errors"></div>
+<script>
+function myFunction(tekst) {
+  document.getElementById("myText").value = tekst;
+}
+
+function cToF(celsius) 
+{
+  const cTemp = celsius;
+  const cToFahr = cTemp * 9 / 5 + 32;
+  const message = `${cTemp}\xB0C is ${cToFahr} \xB0F.`;
+  	document.getElementById("wynik").value = message;
+    console.log(message);
+}
+
+function fToC(fahrenheit) 
+{
+  const fTemp = fahrenheit;
+  const fToCel = (fTemp - 32) * 5 / 9;
+  const message = `${fTemp}\xB0F is ${fToCel}\xB0C.`;
+    console.log(message);
+} 
+
+function addText(tekst) {
+	var div = document.getElementById('divID');
+	div.innerHTML += tekst;
+}
+
+function validate() {
+	
+	var div = document.getElementById('errors');
+    div.Value=" ";
+    if(isNaN(document.getElementById('number').value)){
+	div.innerHTML += "not a number <br/>";
+    }
+    if ('null' != document.getElementById('notnull').value){
+    div.innerHTML += "null <br/>";
+    }
+}
+</script>
+
+</body>

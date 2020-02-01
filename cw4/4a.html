@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+
+</br>
+<input type="text" id="tekst" value="">
+<input type="text" id="wynik" value="">
+
+<button onclick='cToF(document.getElementById("tekst").value)'>CdF</button>
+
+
+</br>
+<input type="text" id="tekst2" value="">
+<input type="text" id="wynik2" value="">
+
+<button onclick='fToC(document.getElementById("tekst2").value)'>FdC</button>
+
+<script>
+function myFunction(tekst) {
+  document.getElementById("myText").value = tekst;
+}
+function myFunction2(tekst2) {
+  document.getElementById("myText2").value = tekst;
+}
+
+function cToF(celsius) 
+{
+  const cTemp = celsius;
+  const cToFahr = cTemp * 9 / 5 + 32;
+  const message = `${cTemp}\xB0C to ${cToFahr} \xB0F.`;
+  	document.getElementById("wynik").value = message;
+    console.log(message);
+}
+
+function fToC(fahrenheit) 
+{
+  const fTemp = fahrenheit;
+  const fToCel = (fTemp - 32) * 5 / 9;
+  const message = `${fTemp}\xB0F to ${fToCel}\xB0C.`;
+    document.getElementById("wynik2").value = message;
+    console.log(message);
+} 
+
+
+</script>
